@@ -1,9 +1,17 @@
+// app/api/purge/route.js
+
 import { NextResponse } from 'next/server';
 import { PurgeCSS } from 'purgecss';
 import fs from 'fs';
 import path from 'path';
 import fetch from 'node-fetch';
-import { JSDOM } from 'jsdom';
+import { JSDOM } from 'jsdom'; // HTML parsing
+
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
 
 // Helper to fetch CSS content
 const fetchCSSFile = async (url) => {
@@ -13,11 +21,17 @@ const fetchCSSFile = async (url) => {
     return await response.text();
   } catch (error) {
     console.error(`Error fetching CSS from ${url}:`, error);
-    return '';
+    return ''; // Return empty string on error
   }
 };
 
-// PurgeCSS logic for individual sections
+// Helper to clean filenames by removing query params
+const cleanFileName = (url) => {
+  const parsedUrl = new URL(url);
+  const baseName = path.basename(parsedUrl.pathname) || 'style.css'; // Default to 'style.css' if no name
+  return baseName.replace(/\?.*$/, ''); // Strip query parameters
+};
+
 const handlePurgeCSS = async (htmlContent, cssContent) => {
   const purgeCSSResults = await new PurgeCSS().purge({
     content: [{ raw: htmlContent, extension: 'html' }],
@@ -31,9 +45,11 @@ export async function POST(req) {
   const data = await req.formData();
   const url = data.get('url');
 
+  // Check and create public directory if it doesn't exist
   const publicDir = path.join(process.cwd(), 'public');
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir);
+    console.log('Created public directory.');
   }
 
   // Fetch the HTML content from the provided URL
@@ -46,58 +62,38 @@ export async function POST(req) {
     return NextResponse.json({ message: 'Error fetching HTML.' }, { status: 400 });
   }
 
-  // Parse the HTML and extract the <main> element
+  // Parse the HTML to find all CSS links
   const dom = new JSDOM(htmlContent);
-  const mainElement = dom.window.document.querySelector('main');
-  if (!mainElement) {
-    return NextResponse.json({ message: '<main> element not found.' }, { status: 400 });
-  }
-
-  // Find all CSS links in the document
   const links = Array.from(dom.window.document.querySelectorAll('link[rel="stylesheet"]'));
+
   if (links.length === 0) {
     return NextResponse.json({ message: 'No CSS files found.' }, { status: 400 });
   }
 
   const purgedFiles = [];
-  const cssContents = [];
 
-  // Fetch all CSS content once
+  // Process each CSS file separately
   for (const link of links) {
     const href = link.href.startsWith('http') ? link.href : new URL(link.href, url).href;
+
     const cssContent = await fetchCSSFile(href);
-    if (cssContent) cssContents.push(cssContent);
-  }
 
-  // Process each section
-  const sections = Array.from(mainElement.children).filter((el) => el.id);
-
-  for (const section of sections) {
-    const sectionHTML = section.outerHTML;
-    let mergedCSS = '';
-
-    // Purge and merge CSS for this section
-    for (const cssContent of cssContents) {
+    if (cssContent) {
       try {
-        const purgedCSS = await handlePurgeCSS(sectionHTML, cssContent);
-        mergedCSS += purgedCSS;
+        const purgedCSS = await handlePurgeCSS(htmlContent, cssContent);
+        const fileName = `purged-${cleanFileName(href)}`;
+        const outputPath = path.join(publicDir, fileName); // Use publicDir
+
+        fs.writeFileSync(outputPath, purgedCSS);
+        purgedFiles.push({ name: fileName, url: `/${fileName}` });
       } catch (error) {
-        console.error(`Error purging CSS for section ${section.id}:`, error);
+        console.error(`Error purging CSS from ${href}:`, error);
       }
-    }
-
-    // Save merged CSS for this section
-    if (mergedCSS) {
-      const fileName = `section-${section.id}.css`;
-      const outputPath = path.join(publicDir, fileName);
-
-      fs.writeFileSync(outputPath, mergedCSS);
-      purgedFiles.push({ id: section.id, name: fileName, url: `/${fileName}` });
     }
   }
 
   return NextResponse.json({
-    message: 'CSS files processed and merged successfully for each section.',
+    message: 'CSS files processed successfully.',
     files: purgedFiles,
   });
 }

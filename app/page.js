@@ -55,11 +55,10 @@ export default function HomePage() {
 
       {purgedFiles.length > 0 && (
         <div style={styles.downloadSection}>
-          <h2 style={styles.downloadTitle}>Download Section-wise Purged CSS Files</h2>
+          <h2 style={styles.downloadTitle}>Download Purged CSS Files</h2>
           <ul style={styles.fileList}>
-            {purgedFiles.map((file) => (
-              <li key={file.id} style={styles.fileItem}>
-                <h3>Section: {file.id}</h3>
+            {purgedFiles.map((file, index) => (
+              <li key={index} style={styles.fileItem}>
                 <a href={file.url} download style={styles.fileLink}>
                   {file.name}
                 </a>
