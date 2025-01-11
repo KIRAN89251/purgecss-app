@@ -1,0 +1,31 @@
+/** Shopify CDN: Minification failed
+
+Line 8:96694 "ustify-content" is not a known CSS property
+Line 52:118 Unexpected "{"
+Line 96:7432 "argin-bottom" is not a known CSS property
+
+**/
+ @font-face {font-family: Gotham;src: url(/cdn/shop/files/Gotham-Medium.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamBold;src: url(/cdn/shop/files/Gotham-Bold.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamLight;src: url(/cdn/shop/files/Gotham-Light.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamBlack;src: url(/cdn/shop/files/Gotham-Black.otf?v=1703247977);font-display: swap;}@font-face {font-family: GothamBook;src: url(/cdn/shop/files/Gotham-Book.otf?v=1703250908);font-display: swap;}@font-face {font-family: GothamMedium;src: url(/cdn/shop/files/Gotham-Medium_67a18a2c-afb7-45ef-abc8-ee9dd6c0e1d3.otf?v=1703582397);font-display: swap;}@keyframes moveSlide {0% {background-position: 0;}100% {background-position: -1200px;}}ul.privacy-policy-list {list-style: disc;padding-left: 54px;padding-bottom: 25px;}ul.privacy-policy-list li {padding: 6px 0px;font-size: 1.4rem;}.accordion summary {padding: 0.8rem;}a.back_link_url {font-size: 1.4rem;line-height: 2.4rem;color: rgb(47 137 180/var(--tw-text-opacity)) !important;}.master-box {width: 100%;margin: 0 auto;}@media (min-width: 320px) and (max-width: 767px) {.master-box {padding: 0 0!important;}.master-box {width: 100% !important;}.faqWrapperCard {display: block !important;}}.faqWrapperCard {border-radius: 5px;padding: 30px 15px;display: -ms-flexbox;display: flex;}.faq-header {text-align: center;color: white;}.master-box h4 {color: #1a2b58;font-size: 2.4rem;font-weight: 600;line-height: normal;}#myUL {list-style-type: none;width: 100%;padding: 0;background: rgba(255, 255, 255, 0.01);}.show {display: block;}@keyframes golive-scale-fade {0% {opacity: 0.5;transform: scale(1);}50% {opacity: 0;transform: scale(4);}100% {opacity: 0;transform: scale(4);}}@keyframes red-dot-scale-fade {0% {opacity: 0.5;transform: scale(1);}50% {opacity: 0;transform: scale(3.5);}100% {opacity: 0;transform: scale(3.5);}}@media (min-width: 320px) and (max-width: 767px) {h1 {font-size: 1.5rem;}}@keyframes blink {0% {opacity: 0;}100% {opacity: 1;}}@keyframes bgstrip {0% {background-position: -1000px 0px;}100% {background-position: 1000px 0px;}}.master-box.Why-section-faq h4 {color: #1a2b58;font-size: 32px;font-weight: 800;font-family: sans-serif;}.Why-section-faq accordion-item.accordion {border-bottom: 1px solid #000;border-radius: unset;}.Why-section-faq accordion-item[open] {border-bottom: 1px solid #0000;border-radius: unset;}.Why-section-faq accordion-item[open] .accordion__content {margin-bottom: 1.8rem;margin-top: 1.4rem;}.master-box.Why-section-faq accordion-item.accordion {margin-top: 0px !important;}.master-box.Why-section-faq .row-faq.faqWrapperCard {padding: 18px 0px 18px 0px;}.master-box.Why-section-faq accordion-item[open] summary {border-bottom: 1px solid #000;}@media (min-width: 320px) and (max-width: 767px) {.master-box.Why-section-faq h4 {font-size: 1.8rem;line-height: 2rem;}.master-box.Why-section-faq accordion-item[open] .accordion__content.rte p {font-size: 16px !important;line-height: 2rem !important;color: #1a2b58;font-weight: 500 !important;font-family: 'Open Sans' !important;}}.Why-section-faq accordion-item.accordion {border-bottom: 1px solid #000;border-radius: unset;}.Why-section-faq accordion-item[open] {border-bottom: 1px solid #0000;border-radius: unset;}.Why-section-faq accordion-item[open] .accordion__content {margin-bottom: 1.8rem;margin-top: 1.4rem;}@media (min-width: 320px) and (max-width: 767px) {.master-box.Why-section-faq h4.subtitle {line-height: normal;font-size: 1.8rem;}}.accordion__title h3, .accordion__title{font-size: 1.4rem;font-weight: 600;}.accordion__content.rte p {font-size: 1.4rem;line-height: 2rem;}.accordion__content.rte ul.privacy-policy-list{padding-bottom: 0px;}.accordion__content.rte ul.privacy-policy-list li {font-size: 1.4rem;line-height: 2rem;}.master-box .row-faq.faqWrapperCard {padding: 32px 0px !important;}@media (min-width: 320px) and (max-width: 767px) {body#all-beds .master-box .row-faq.faqWrapperCard {padding: 0px 0px !important;}body#all-beds .master-box h4 {color: #1a2b58;font-size: 2rem;font-weight: bold;line-height: normal;}}::-webkit-scrollbar {width: 20px;}::-webkit-scrollbar-track {background-color: transparent;}::-webkit-scrollbar-thumb {background-color: #d6dee1;border-radius: 20px;border: 6px solid transparent;background-clip: content-box;}::-webkit-scrollbar-thumb:hover {background-color: #a8bbbf;}@keyframes Animationblink {0% {background-position: -40% }100% {background-position: 100% }}
+, {
+
+  background-position: center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}@keyframes blinkAnimation {0% {opacity: 1;}50% {opacity: 0;}100% {opacity: 1;}}
+/* DEVX AK CODE CSS */
+/* DESKTOP */
+/* MOBILE */  
+
+
+/* STILL CONFUSE SPECIAL CSS FOR BED PDP START */
+
+
+/* to hide image with text in all bed pdp start*/
+/* to hide image with text in all bed pdp end*/
+
+
+
+/* STILL CONFUSE SPECIAL CSS FOR BED PDP END */
+
+/* DEVX AK CODE CSS */

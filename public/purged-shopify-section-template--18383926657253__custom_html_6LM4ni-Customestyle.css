@@ -1,0 +1,31 @@
+/** Shopify CDN: Minification failed
+
+Line 8:96694 "ustify-content" is not a known CSS property
+Line 52:118 Unexpected "{"
+Line 96:7432 "argin-bottom" is not a known CSS property
+
+**/
+ @font-face {font-family: Gotham;src: url(/cdn/shop/files/Gotham-Medium.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamBold;src: url(/cdn/shop/files/Gotham-Bold.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamLight;src: url(/cdn/shop/files/Gotham-Light.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamBlack;src: url(/cdn/shop/files/Gotham-Black.otf?v=1703247977);font-display: swap;}@font-face {font-family: GothamBook;src: url(/cdn/shop/files/Gotham-Book.otf?v=1703250908);font-display: swap;}@font-face {font-family: GothamMedium;src: url(/cdn/shop/files/Gotham-Medium_67a18a2c-afb7-45ef-abc8-ee9dd6c0e1d3.otf?v=1703582397);font-display: swap;}@keyframes moveSlide {0% {background-position: 0;}100% {background-position: -1200px;}}.show {display: block;}@keyframes golive-scale-fade {0% {opacity: 0.5;transform: scale(1);}50% {opacity: 0;transform: scale(4);}100% {opacity: 0;transform: scale(4);}}@keyframes red-dot-scale-fade {0% {opacity: 0.5;transform: scale(1);}50% {opacity: 0;transform: scale(3.5);}100% {opacity: 0;transform: scale(3.5);}}@keyframes blink {0% {opacity: 0;}100% {opacity: 1;}}@keyframes bgstrip {0% {background-position: -1000px 0px;}100% {background-position: 1000px 0px;}}::-webkit-scrollbar {width: 20px;}::-webkit-scrollbar-track {background-color: transparent;}::-webkit-scrollbar-thumb {background-color: #d6dee1;border-radius: 20px;border: 6px solid transparent;background-clip: content-box;}::-webkit-scrollbar-thumb:hover {background-color: #a8bbbf;}@keyframes Animationblink {0% {background-position: -40% }100% {background-position: 100% }}
+, {
+
+  background-position: center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}@keyframes blinkAnimation {0% {opacity: 1;}50% {opacity: 0;}100% {opacity: 1;}}input[type=number] {margin-top: -4px;}
+/* DEVX AK CODE CSS */
+/* DESKTOP */
+/* MOBILE */  
+
+
+/* STILL CONFUSE SPECIAL CSS FOR BED PDP START */
+
+
+/* to hide image with text in all bed pdp start*/
+/* to hide image with text in all bed pdp end*/
+
+
+
+/* STILL CONFUSE SPECIAL CSS FOR BED PDP END */
+
+/* DEVX AK CODE CSS */

@@ -1,0 +1,31 @@
+/** Shopify CDN: Minification failed
+
+Line 8:96694 "ustify-content" is not a known CSS property
+Line 52:118 Unexpected "{"
+Line 96:7432 "argin-bottom" is not a known CSS property
+
+**/
+ @font-face {font-family: Gotham;src: url(/cdn/shop/files/Gotham-Medium.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamBold;src: url(/cdn/shop/files/Gotham-Bold.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamLight;src: url(/cdn/shop/files/Gotham-Light.otf?v=1703247978);font-display: swap;}@font-face {font-family: GothamBlack;src: url(/cdn/shop/files/Gotham-Black.otf?v=1703247977);font-display: swap;}@font-face {font-family: GothamBook;src: url(/cdn/shop/files/Gotham-Book.otf?v=1703250908);font-display: swap;}@font-face {font-family: GothamMedium;src: url(/cdn/shop/files/Gotham-Medium_67a18a2c-afb7-45ef-abc8-ee9dd6c0e1d3.otf?v=1703582397);font-display: swap;}@keyframes moveSlide {0% {background-position: 0;}100% {background-position: -1200px;}}.close {color: #fff;float: right;font-size: 31px;font-weight: 700;position: absolute;right: 25px;background: #000;padding: 5px;line-height: 20px;}.close:hover, .close:focus {color: #fff;text-decoration: none;cursor: pointer;}.section-title {text-align: center;padding-bottom: 32px;}@keyframes golive-scale-fade {0% {opacity: 0.5;transform: scale(1);}50% {opacity: 0;transform: scale(4);}100% {opacity: 0;transform: scale(4);}}@keyframes red-dot-scale-fade {0% {opacity: 0.5;transform: scale(1);}50% {opacity: 0;transform: scale(3.5);}100% {opacity: 0;transform: scale(3.5);}}@keyframes blink {0% {opacity: 0;}100% {opacity: 1;}}@keyframes bgstrip {0% {background-position: -1000px 0px;}100% {background-position: 1000px 0px;}}.close span:before {transform: rotate(45deg);}.close span:after, .close span:before {position: absolute;right: 12px;content: ' ';height: 20px;width: 5px;background-color: #fff;}.close span:after {transform: rotate(-45deg);}::-webkit-scrollbar {width: 20px;}::-webkit-scrollbar-track {background-color: transparent;}::-webkit-scrollbar-thumb {background-color: #d6dee1;border-radius: 20px;border: 6px solid transparent;background-clip: content-box;}::-webkit-scrollbar-thumb:hover {background-color: #a8bbbf;}@keyframes Animationblink {0% {background-position: -40% }100% {background-position: 100% }}
+, {
+
+  background-position: center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}@keyframes blinkAnimation {0% {opacity: 1;}50% {opacity: 0;}100% {opacity: 1;}}.section-peaceful-sleep-video .peaceful-sleep-video .text-content-wrapper .text-content-card .text-content-title {width: 97%!important;font-size: 4.2rem!important;line-height: normal!important;}.section-peaceful-sleep-video .peaceful-sleep-video .text-content-wrapper .text-content-card .feaure-collection .image-text-wrapper .collection-handle {font-family: GothamBook;font-size: 1rem!important;font-style: normal!important;}@media (min-width: 320px) and (max-width: 767px) {.section-peaceful-sleep-video .peaceful-sleep-video .text-content-wrapper .text-content-card .feaure-collection .image-text-wrapper .collection-handle {font-family: GothamBook;font-size: 1.4rem!important;font-style: normal!important;line-height: normal!important;}}
+/* DEVX AK CODE CSS */
+/* DESKTOP */
+/* MOBILE */  
+
+
+/* STILL CONFUSE SPECIAL CSS FOR BED PDP START */
+
+
+/* to hide image with text in all bed pdp start*/
+/* to hide image with text in all bed pdp end*/
+
+
+
+/* STILL CONFUSE SPECIAL CSS FOR BED PDP END */
+
+/* DEVX AK CODE CSS */
