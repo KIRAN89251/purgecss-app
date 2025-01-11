@@ -6,12 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "purge": "node purge.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "chart.js": "^4.4.5",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "jsdom": "^25.0.1",
+    "next": "15.0.1",
+    "node-fetch": "^3.3.2",
+    "purgecss": "^6.0.0",
     "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "next": "15.0.1"
+    "react-dom": "19.0.0-rc-69d4b800-20241021"
   },
   "devDependencies": {
     "eslint": "^8",
