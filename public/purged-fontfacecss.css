@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Gotham;
+  src: url(/cdn/shop/files/Gotham-Medium.otf?v=1703247978);
+  font-display: swap;
+}
+@font-face {
+  font-family: GothamBold;
+  src: url(/cdn/shop/files/Gotham-Bold.otf?v=1703247978);
+  font-display: swap;
+}
+@font-face {
+  font-family: GothamLight;
+  src: url(/cdn/shop/files/Gotham-Light.otf?v=1703247978);
+  font-display: swap;
+}
+@font-face {
+  font-family: GothamBlack;
+  src: url(/cdn/shop/files/Gotham-Black.otf?v=1703247977);
+  font-display: swap;
+}
+@font-face {
+  font-family: GothamBook;
+  src: url(/cdn/shop/files/Gotham-Book.otf?v=1703250908);
+  font-display: swap;
+}
+@font-face {
+  font-family: GothamMedium;
+  src: url(/cdn/shop/files/Gotham-Medium_67a18a2c-afb7-45ef-abc8-ee9dd6c0e1d3.otf?v=1703582397);
+  font-display: swap;
+}
